@@ -1,3 +1,5 @@
 name: CookieBody
 markdown: redcarpet
 pygments: true
+paginate: 7
+paginate_path: "page:num"

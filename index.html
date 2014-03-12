@@ -1,13 +1,39 @@
 ---
 layout: default
-title: CookieBody
+title: 首页
 ---
 
 <div id="home">
   <!--<h1>Blog Posts</h1>-->
   <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date: "%Y-%m-%d %H:%m" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% for post in paginator.posts %}
+      <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 左翻</a>
+  {% else %}
+    <span>&laquo; 左翻</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">右翻 &raquo;</a>
+  {% else %}
+    <span>右翻 &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
