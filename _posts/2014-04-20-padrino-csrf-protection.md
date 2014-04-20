@@ -56,5 +56,3 @@ proxy_set_header X-CSRF-TOKEN $http_x_xsrf_token;
 {% endhighlight %}
 
 此外，由于Padrino的session默认是存储在内存，如果应用跑在多台服务器，请求可能会被分配到任意台机器，那就需要统一session存储，例如，可以将[session存储在mongodb](https://github.com/migrs/rack-session-mongo)。
-
-![Alt Message](https://raw.github.com/mattnorris/whispernote/gh-pages/assets/img/whispernote-github-wiki-banner.jpg)
