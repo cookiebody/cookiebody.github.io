@@ -3,10 +3,10 @@ layout: post
 title:  "Padrino中如何防范CSRF"
 date:   2014-04-20 21:40:00
 ---
-[CSRF（Cross Site Request Forgery, 跨站请求伪造）](http://en.wikipedia.org/wiki/Cross-site_request_forgery)是web中常见攻击方式之一，作为开发者，可以使用以下三种方法，来防范此类攻击：
+[CSRF（Cross Site Request Forgery, 跨站请求伪造）](http://en.wikipedia.org/wiki/Cross-site_request_forgery)是web中常见攻击方式之一，通常使用以下三种方法，来防范此类攻击：
 
 1.  验证 HTTP Referer 字段
-2.  在请求参数中添加token并验证；
+2.  在请求参数中添加token并验证
 3.  在 HTTP 头中自定义属性并验证
 
 在方法1中，是通过验证请求来源网址，在web server中进行设置即可，例如在[nginx中](http://nginx.org/en/docs/http/ngx_http_referer_module.html)：
