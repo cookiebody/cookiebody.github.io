@@ -55,4 +55,4 @@ response.set_cookie('XSRF-TOKEN',
 proxy_set_header X-CSRF-TOKEN $http_x_xsrf_token;
 {% endhighlight %}
 
-此外，由于Padrino的session默认是存储在内存，如果应用跑在多台服务器，请求可能会被分配到任意台机器，那就需要统一session存储，例如，可以将[session存储在mongodb](https://github.com/migrs/rack-session-mongo)。
+此外，由于Padrino的session默认是存储在内存，如果应用跑在多台服务器，请求可能会被分配到任意台机器，那就需要统一session存储，可以使用Rack中默认提供的Rack::Memcache，把session存在memcache，或使用其它存储方案：Redis、MongoDB等。
