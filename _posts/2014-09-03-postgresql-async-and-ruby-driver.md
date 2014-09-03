@@ -38,6 +38,7 @@ libpq本身，确实支持同步和异步两种操作方式：
 下面看看ruby-pg：[ruby-pg](https://github.com/ged/ruby-pg)
 
 ruby-pg对Pg的操作，是依赖libpq实现的，其中也包含异步操作接口。
+
 但是，经过ruby-pg的封装，异步接口，已经和同步效果一样，看代码：
 
 [ruby-pg#pg_connection](https://github.com/ged/ruby-pg/blob/master/ext/pg_connection.c#L3034)
@@ -47,7 +48,10 @@ ruby-pg对Pg的操作，是依赖libpq实现的，其中也包含异步操作接
 
 ![ruby-pg]({{ site.url }}/assets/ruby-pg2.png)
 
-可以看到，在send_query之后，紧接着，就实现了一个轮询方法，去get_result，这个轮询会导致调用程序阻塞，直到获得返回结果。
+可以看到，在send_query之后，紧接着，就实现了一个轮询方法，
+
+去get_result，这个轮询会导致调用程序阻塞，直到获得返回结果。
+
 使用Pg中的pg_sleep(seconds)来模拟指令执行，通过代码来验证：
 
 ![ruby-pg-test]({{ site.url }}/assets/ruby-pg-test.png)
