@@ -48,9 +48,7 @@ ruby-pg对Pg的操作，是依赖libpq实现的，其中也包含异步操作接
 
 ![ruby-pg]({{ site.url }}/assets/ruby-pg2.png)
 
-可以看到，在send_query之后，紧接着，就实现了一个轮询方法，
-
-去get_result，这个轮询会导致调用程序阻塞，直到获得返回结果。
+可以看到，在send_query之后，紧接着，就实现了一个轮询方法，去get_result，这个轮询会导致调用程序阻塞，直到获得返回结果。
 
 使用Pg中的pg_sleep(seconds)来模拟指令执行，通过代码来验证：
 
@@ -67,5 +65,7 @@ ruby-pg对Pg的操作，是依赖libpq实现的，其中也包含异步操作接
 如果把ruby-pg的async_exec函数改为异步的，会带来更多问题，毕竟sequel就是只用这个函数的。
 
 而且，有异步，就想要有回调，但在MRI中实现，比较折腾，使用场景也不多。
+
+对于nodejs这种回调优先的平台，在pg接口：[node-postgres](https://github.com/brianc/node-postgres)实现中，都是用libpq的异步接口。
 
 我们的问题，后来通过应用队列来解决：sidekiq+redis。
