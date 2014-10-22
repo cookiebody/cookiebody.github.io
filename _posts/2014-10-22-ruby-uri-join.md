@@ -53,7 +53,7 @@ end
 
 这才想到，这种url的合并规则，也许是对应RFC标准制定的。
 
-查看了[RFC2396](https://www.ietf.org/rfc/rfc2396.txt#5.2)以及[RFC3986](https://www.ietf.org/rfc/rfc3986.txt#5.2.3)，这两个版本中，都制订了url合并的逻辑：要把源url中的path全部清空，再把目标的path设置为新的path。
+查看了[RFC2396](https://www.ietf.org/rfc/rfc2396.txt#5.2)以及[RFC3986](https://www.ietf.org/rfc/rfc3986.txt#5.2.3)，这两个版本中，都制定了url合并的逻辑：要把源url中的path全部清空，再把目标的path设置为新的path。
 
 虽然在浏览器中，url结尾的那个斜杠有没有无所谓。
 但在使用URI.join合并url时，结尾的斜杠很重要:
