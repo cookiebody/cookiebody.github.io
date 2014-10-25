@@ -2,5 +2,5 @@ url: https://raw.githubusercontent.com/cookiebody/cookiebody.github.io/master
 name: CookieBody
 markdown: redcarpet
 pygments: true
-paginate: 7
+paginate: 12
 paginate_path: "page:num"

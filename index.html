@@ -15,9 +15,9 @@ title: 首页
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 左翻</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 新的</a>
   {% else %}
-    <span>&laquo; 左翻</span>
+    <span>&laquo; 新的</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -31,9 +31,9 @@ title: 首页
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">右翻 &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">旧的 &raquo;</a>
   {% else %}
-    <span>右翻 &raquo;</span>
+    <span>旧的 &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
