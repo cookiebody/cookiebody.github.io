@@ -8,7 +8,7 @@ date: 2014-10-26 21:05:00
 其中，HTTP是一种传输协议，在[rfc2616](http://tools.ietf.org/html/rfc2616)有HTTP的标准描述，URL是资源定位符，是隶属于URI中的子集，在[rfc3986](http://tools.ietf.org/html/rfc3986)有URI的标准描述。
 
 
-关于url和uri之间的区分，有个很形象的比喻：
+关于URL和URI之间的区分，有个很形象的比喻：
 
 
 > **chris**
