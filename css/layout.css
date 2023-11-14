@@ -10,14 +10,14 @@
         header {
             background-color: #3498db;
             color: #fff;
-            padding: 1em 0;
+            padding: 0.2em 0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .header-inner {
-            max-width: 800px;
+            max-width: 830px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -46,7 +46,16 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             padding: 20px;
+              font-size: 18px;
+    line-height: 1.6;
         }
+
+.post-date {
+    color: #787878; /* A neutral, medium gray */
+    font-size: 0.9em; /* Slightly smaller than the main text */
+    margin-bottom: 10px; /* Space below the date */
+    font-style: italic; /* Optional: italicize the date for a classic look */
+}
 
         .blog-post {
             margin-bottom: 20px;
@@ -72,11 +81,18 @@
         }
 
         footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #2980b9;
-            color: #fff;
-        }
+    text-align: center;
+    padding: 1em;
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between; /* Aligns children to the extreme ends */
+    max-width: 830px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the inner container */
+}
 
         @media screen and (max-width: 600px) {
             .header-inner {
@@ -87,3 +103,29 @@
                 margin-bottom: 10px;
             }
         }
+
+
+
+ .post-navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Match this width to the main content width */
+}
+
+
+.post-navigation a {
+    color: #3498db; /* Primary color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold; /* Optional: Makes the text stand out */
+}
+
+.post-navigation a:hover {
+    color: #2980b9; /* Darker shade on hover for interaction */
+}
+
+.post-navigation a.disabled {
+    color: #bdc3c7; /* Lighter color indicating disabled state */
+    cursor: default;
+    pointer-events: none;
+}

@@ -1,0 +1,14 @@
+<div class="post-navigation">
+  {% if page.previous.url %}
+
+      <a href="{{page.previous.url}}" class="prev-post">&lt;Previous</a>
+
+  {% else %}
+      <a href="#" class="prev-post disabled">&lt;Previous</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{{page.next.url}}" class="next-post">Next&gt;</a>
+  {% else %}
+    <a href="#" class="next-post disabled">Next&gt;</a>
+  {% endif %}
+</div>
