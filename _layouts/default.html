@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - {{ site.name }}</title>
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="/css/compact_layout.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PR0BDX6TTG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PR0BDX6TTG');
-</script>
-</head>
-<body>
-
-    <header>
-        <div class="header-inner">
-            <div class="title">
-                <h1><nav><a href="/">{{ site.name }}</a></nav></h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% assign cont = page.keywords | strip_newlines %}
+        {% assign desc = page.description | strip_newlines %}
+        {% if cont == ""  %}
+            <meta name="keywords" content="chriswang,wang zilong, zilong wang,王子龙,王子龍,software engineer, IT, chatgpt, openai, user operation, business operation, growth, team leader, management,golang,ruby,postgresql">
+            {%else%}
+            <meta name="keywords" content="{{ cont }}">
+        {% endif %}
+        {% if desc == ""  %}
+            <meta name="description" content="As a lifelong learner and proactive doer, I’m glad to share my experience in tech and operations.">
+            {%else%}
+            <meta name="description" content="{{ desc }}">
+        {% endif %}
+        <title>{{ page.title }} - {{ site.name }}</title>
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/compact_layout.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PR0BDX6TTG"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PR0BDX6TTG');
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div class="title">
+                    <h1><nav><a href="/">{{ site.name }}</a></nav></h1>
+                </div>
+                <nav>
+                    <a href="/">Blog</a>
+                    <a href="/about">About</a>
+                </nav>
             </div>
-            <nav>
-                <a href="/">Blog</a>
-                <a href="/about">About</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        {{ content }}
-    </main>
-
-    <footer>
-        <div class="footer-inner">
-        <div class="footer-left">
-            &copy; <span id="currentYear"></span> {{ site.name }}
-        </div>
-        <div class="footer-right">
-            <span>Design Inspired by ChatGPT</span>
-        </div>
-    </div>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-    </footer>
-
-</body>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <div class="footer-inner">
+                <div class="footer-left">
+                    &copy; <span id="currentYear"></span> {{ site.name }}
+                </div>
+                <div class="footer-right">
+                    <span>Design Inspired by ChatGPT</span>
+                </div>
+            </div>
+            <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            </script>
+        </footer>
+    </body>
 </html>
