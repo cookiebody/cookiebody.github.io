@@ -3,7 +3,7 @@ layout: default
 ---
 {% include pagination.html %}
 <h2>{{ page.title }}</h2>
-<p class="post-date">{{ page.date | date: "%Y-%m-%d %H:%M" }}</p>
+<p class="post-date" data-post-date="{{ page.date }}"></p>
 <div class="post">
   {{ content }}
 </div>

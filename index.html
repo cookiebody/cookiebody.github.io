@@ -9,7 +9,7 @@ title: Blog
   <div class="blog-post">
     <a href="{{ post.url | relative_url }}">
         <h3>{{ post.title | escape }}</h3>
-        <p class="post-date">{{ post.date | date: "%Y-%m-%d %H:%M" }}</p>
+        <p class="post-date" data-post-date="{{ post.date }}"></p>
         <p>{{ post.desc }}</p>
     </a>
   </div>

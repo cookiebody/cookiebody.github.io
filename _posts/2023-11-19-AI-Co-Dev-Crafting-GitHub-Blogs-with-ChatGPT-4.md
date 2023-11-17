@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  'AI Co-Dev: Crafting GitHub Blogs with ChatGPT-4'
-date:   2023-11-19 17:14:41 +0800
+date:   2023-11-19 17:18:47 +0800
 keywords: 'ChatGPT-4 Web Development, Effortless GitHub Blogging, AI in Frontend Engineering, Automating CSS with AI, HTML No-Code Solutions, Liquid Templating, Adaptive Web Design, Cross-Browser Support, Search Engine Optimization Strategies, Performance-Driven Web Design'
 description: 'Embark on a transformative web development journey with a detailed account of creating a feature-rich, performance-optimized blog using ChatGPT-4 on GitHub Pages. This narrative offers insights into leveraging AI for seamless frontend development, achieving responsive design, and ensuring cross-browser compatibility, all with minimal coding. Dive into a world where AI tools not only augment development processes but also empower creators to focus on innovation and design.'
 desc: "Admittedly, I'm concerned that powerful AI could replace my job—and perhaps you should be, too."
 ---
 
-Though I am a seasoned software engineer, web front-end programming is not my forte. CSS, HTML layout, responsiveness, and browser compatibility are always challenging for me. Most of the time, I collaborate with front-end engineers.
+Though I am a seasoned software engineer, web front-end programming is not my forte. `CSS`, `HTML` layout, responsiveness, and browser compatibility are always challenging for me. Most of the time, I collaborate with front-end engineers.
 
 Through my experience with many browser-related projects, I have learned the basics of web front-end development—including grammar, keywords, and some tips. However, I've never tried to build a web page on my own.
 

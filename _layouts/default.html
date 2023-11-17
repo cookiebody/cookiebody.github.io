@@ -53,6 +53,22 @@
             </div>
             <script>
             document.getElementById('currentYear').textContent = new Date().getFullYear();
+            // Once the DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', (event) => {
+            // Find all elements with the class 'post-date'
+            const dates = document.querySelectorAll('.post-date');
+            // Iterate over each element
+            dates.forEach((dateElement) => {
+            // Get the post date from the data attribute
+            const postDate = dateElement.getAttribute('data-post-date');
+            // Convert it to a Date object
+            const date = new Date(postDate);
+            // Format it to a local string
+            const localDate = date.toLocaleString();
+            // Update the text content of the element
+            dateElement.textContent = localDate;
+            });
+            });
             </script>
         </footer>
     </body>
