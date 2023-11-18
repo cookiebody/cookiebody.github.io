@@ -12,7 +12,7 @@ permalink: /development/
 
 It is a robust platform featuring a TCP server and an intuitive web management portal. Designed for streamlined device configuration and route rule setting among various devices (including ESP8266 and GPRS), the platform offers real-time device messaging via WebSocket and supports custom application development with a RESTful API.
 
-I single-handedly designed and developed the system, collaborating closely with a Firmware engineer to establish protocol standards.
+I was responsible for the system design and backend development, collaborating with a frontend engineer on the web interface and jointly designing communication protocols with a firmware engineer.
 
 Over 10,000 electronic engineers use this platform for building and testing IoT products, from demonstrations to fully functional prototypes.
 
