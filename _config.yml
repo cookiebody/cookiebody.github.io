@@ -31,6 +31,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 future: true
 markdown: redcarpet
+timezone: "Asia/Shanghai"
 
 
 # Build settings
