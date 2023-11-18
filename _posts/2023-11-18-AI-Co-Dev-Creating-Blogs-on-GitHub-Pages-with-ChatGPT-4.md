@@ -8,9 +8,7 @@ desc: "I developed this website in just five hours, with all the front-end code 
 ---
 
 Although I'm an experienced software engineer, creating websites is not what I do best. I find things like CSS, making layouts, and getting websites to work well on different browsers quite hard. Usually, I work with experts in this area.
-
 But I've learned a bit about making websites from projects I've worked on. I know some basics now. Yet, I had never tried to build a website by myself until recently.
-
 I have used ChatGPT a lot for programming behind the scenes. It's a great tool that makes work much faster. I wondered if it could help with making websites too. Unlike the back-end work, which uses one programming language, websites need three: HTML, CSS, and JavaScript.
 
 So, I tried to make a blog with ChatGPT-4 on GitHub Pages. In five hours, I had a blog with:
@@ -31,7 +29,6 @@ I checked my blog with Google's PageSpeed Insights, and it scored very high:
 [View full test report here.](https://pagespeed.web.dev/analysis/https-chriswang-ai/cjm80xck4m?hl=en&form_factor=desktop){: .middle-part}
 
 While making the blog, I didn't write any code. ChatGPT did that when I asked it to. My job was to use the code, add some Liquid code, and test and update the website. Asking ChatGPT for code was like asking my team for help.
-
 Here are some examples of how I asked ChatGPT for help:
 
 ![prompt1](/assets/resized_and_converted_image_1.jpg)
@@ -39,13 +36,9 @@ Here are some examples of how I asked ChatGPT for help:
 ![prompt2](/assets/resized_and_converted_image_2.jpg)
 
 When building a website, the way it looks and works is important, but the most important part is the words and pictures—what we call the content. I write my blog posts in simple English and ChatGPT helps make them better.
-
 ChatGPT also helps make the pictures smaller and the website easier for people to find on Google.
-
 ChatGPT can do many things that used to need special skills. It works as well as a person who knows a lot about these things.
 
 I sometimes worry that AI like ChatGPT might take my job. Maybe you worry about this too. But ChatGPT can't see or live in the real world—that's something only humans can do.
-
 We should learn to use tools like ChatGPT well, just like learning to drive a car.
-
 In a race, the best car helps, but the best driver wins.
