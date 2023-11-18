@@ -5,11 +5,10 @@ title: Blog
 
 <h2>Latest Posts</h2>
 {%- for post in site.posts -%}
-  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   <div class="blog-post">
     <a href="{{ post.url | relative_url }}">
         <h3>{{ post.title | escape }}</h3>
-        <p class="post-date" data-post-date="{{ post.date }}"></p>
+        <p class="post-date" data-post-date="{{ post.date | date: "%Y-%m-%dT%H:%M:%S.%L%:z" }}"></p>
         <p>{{ post.desc }}</p>
     </a>
   </div>
