@@ -265,7 +265,6 @@ PLATFORMS
   arm64-darwin-23
 
 DEPENDENCIES
-  faraday (~> 2.7, >= 2.7.11)
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
