@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![chris wang](/assets/chris.png)
+
 ## 王子龍(Chris Wang)
 
 Beginning my journey in the tech industry as a developer, I have played a pivotal role in initiating and delivering a variety of technological projects, such as `AFC`, `SaaS`, `EMR`, and `CES` solutions.
