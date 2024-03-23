@@ -22,10 +22,13 @@ Is there any opportunity for people to compete with AI? There must be, I think, 
 
 Mind the latter part, the practice. Because AI cannot feel the real world, that's an advantage for humans, especially older ones. You should choose a path that combines your experience or interests with the gap between AI and society. There are some paths that may be suitable:
 
-Food industry: Farmer or cook, for example. Everyone needs to eat, especially healthy or delicious food.
-Education industry: AI is a passive machine, but there must be a teacher for newbies who can proactively guide them.
-Marketing and sales industry: People have unique emotional feelings that AI does not. People buy everything through emotions, not just wisdom. Only humans have the intuition to influence people's minds.
-Handicraft industry: Try making things by hand in your spare time. Choose non-industrialized products, such as handmade jewelry or house renovations.
+**Food industry**: Farmer or cook, for example. Everyone needs to eat, especially healthy or delicious food.
+
+**Education industry**: AI is a passive machine, but there must be a teacher for newbies who can proactively guide them.
+
+**Marketing and sales industry**: People have unique emotional feelings that AI does not. People buy everything through emotions, not just wisdom. Only humans have the intuition to influence people's minds.
+
+**Handicraft industry**: Try making things by hand in your spare time. Choose non-industrialized products, such as handmade jewelry or house renovations.
 
 You may think of more paths than those above. But no matter which way you choose, it will still require an investment of time. It may not be easy, but you must plan for it earlier. Stable jobs do not exist, and experience in the same job may not be as valuable as you think. For me, it took more than 3 years to transition from a technology professional to a business expert. This really helped me expand my horizon and opportunities.
 
