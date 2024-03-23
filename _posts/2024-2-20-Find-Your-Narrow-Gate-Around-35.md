@@ -3,8 +3,9 @@ layout: post
 title: Find your narrow gate around age 35
 date: 2024-02-20 15:09:47.000 +0800
 keywords: Navigating Challenges, Over 35, Adapting to AI, Job Market, Artificial Intelligence, Opportunities Beyond 35, Career Growth, Strategies for Success, Changing Job Market, Thriving in AI Era
-description: "Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it.", Matthew 7:13-14
+description: Enter through the narrow gate. For wide is the gate and broad is the road that leads to destruction, and many enter through it - Matthew
 ---
+
 After the age of 35, I find it hard for me to learn new things. There are physical reasons; I need to sleep earlier and get full energy for tomorrow. There may be pain around the waist or neck when sitting or standing for long periods.
 
 Also, there are attention problems. I need to take care of all kinds of relationships, including family members, clients, and colleagues. This means I am often disturbed by external factors, making it hard to focus on my own tasks.
