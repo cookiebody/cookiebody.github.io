@@ -3,19 +3,16 @@ layout: default
 title: About
 permalink: /about/
 ---
+## Chris Wang
 
-![chris wang](/assets/chris.jpg){: width="200px"}
+Embarking on my journey in the tech industry as a developer, I have played a pivotal role in initiating and delivering a variety of innovative technological projects, including Automated Fare Collection (AFC), Software as a Service (SaaS), Electronic Medical Records (EMR), and Customer Engagement Solutions (CES).
 
-## 王子龍(Chris Wang)
+My career trajectory has seen a dynamic evolution, advancing through key positions such as Software Architect, Technical Lead, and Business Manager.
 
-Beginning my journey in the tech industry as a developer, I have played a pivotal role in initiating and delivering a variety of technological projects, such as `AFC`, `SaaS`, `EMR`, and `CES` solutions.
+This journey has endowed me with a diverse and rich skill set encompassing software development, team leadership, and business operations.
 
-Over time, my career path has seen a dynamic evolution, advancing through key positions like Architect, Tech Lead, and Manager.
+As a lifelong learner and proactive leader, I am eager to share my extensive experience in both technology and operations.
 
-This journey has endowed me with a rich skill set encompassing `software development`, `system design`, and `business operation`.
+For a detailed overview of my professional experience, please view my [Operational Achievements](/operation) or explore my [Development Portfolio](/development).
 
-As a lifelong learner and proactive doer, I’m glad to share my experience in tech and operations.
-
-For my work experience, you can view my [Operational Achievements](/operation) or [Development Portfolio](/development).
-
-Additionally, you can email me at `chrisloong5@gmail.com`, I will reply as soon if it's worth to.
+Additionally, feel free to contact me at chrisloong5@gmail.com, I am prompt in responding to queries that merit my attention.

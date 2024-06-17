@@ -1,120 +1,150 @@
+/* General Styles */
 body {
-font-family: 'Arial', sans-serif;
-line-height: 1.6;
-margin: 0;
-padding: 0;
-background-color: #f8f8f8;
-color: #333;
+    font-family: 'Georgia', serif; /* Classic serif font */
+    line-height: 1.7; /* Slightly greater line height for readability */
+    letter-spacing: 0.5px; /* Slightly more spaced-out letters */
+    word-spacing: 1px; /* Increased word spacing for clarity */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light grey background */
+    color: #333; /* Dark grey text color */
 }
+
+/* Header Styles */
 header {
-background-color: #3498db;
-color: #fff;
-padding: 0.2em 0;
-display: flex;
-justify-content: center;
-align-items: center;
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text color */
+    padding: 0.2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .header-inner {
-max-width: 830px;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    max-width: 830px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .header .title {
-margin: 0;
+    margin: 0;
 }
+
 header nav a {
-color: #fff;
-text-decoration: none;
-margin: 0 10px;
-font-size: 1.1em;
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underlines */
+    margin: 0 10px;
+    font-size: 1.1em; /* Slightly larger font */
 }
+
 header nav a:visited {
-color: #fff;
+    color: #fff; /* Ensure visited links remain white */
 }
+
+/* Main Content Styles */
 main {
-max-width: 800px;
-margin: 20px auto;
-background-color: #fff;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
-padding: 20px;
-font-size: 18px;
-line-height: 1.6;
+    max-width: 800px; /* Constrain main content width */
+    margin: 20px auto; /* Center the main content */
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px;
+    font-size: 18px; /* Font size for main content */
+    line-height: 1.7; /* Increase line height for readability */
 }
+
 .post-date {
-color: #787878; /* A neutral, medium gray */
-font-size: 0.9em; /* Slightly smaller than the main text */
-margin-bottom: 10px; /* Space below the date */
-font-style: italic; /* Optional: italicize the date for a classic look */
+    color: #787878; /* Neutral grey */
+    font-size: 0.9em; /* Smaller font size for dates */
+    margin-bottom: 10px;
+    font-style: italic; /* Italic for a classic look */
 }
+
+/* Blog Post Styles */
 .blog-post {
-margin-bottom: 20px;
-border-bottom: 1px solid #eee;
-padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Light grey border */
+    padding-bottom: 10px;
 }
+
 .blog-post a {
-display: block;
-color: black;
-text-decoration: none;
+    display: block;
+    color: black; /* Black text color for links */
+    text-decoration: none; /* Remove underlines */
 }
+
 .blog-post h3 {
-margin-bottom: 0.5em;
-font-weight: normal;
+    margin-bottom: 0.5em; /* Space below headings */
+    font-weight: normal; /* Normal font weight */
 }
+
 .blog-post p {
-margin: 0.5em 0;
-line-height: 1.6;
-color: #555;
+    margin: 0.5em 0;
+    line-height: 1.7; /* Increased line height for readability */
+    color: #555; /* Slightly lighter grey for text */
 }
+
+/* Image Styles */
 .post img {
-max-width: 100%;
-height: auto;
-display: block; /* Remove extra space below the image */
-margin: 0 auto; /* Center the image if it's smaller than the container */
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image */
 }
-.post .middle-part{
-  display: block;
-    width: fit-content; /* or a specific width */
+
+.post .middle-part {
+    display: block;
+    width: fit-content; /* Adjust width to content */
+    margin: 0 auto; /* Center the middle part */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2980b9; /* Darker blue */
+    color: #fff; /* White text color */
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 830px;
     margin: 0 auto;
 }
-footer {
-text-align: center;
-padding: 1em;
-background-color: #2980b9;
-color: #fff;
-}
-.footer-inner {
-display: flex;
-justify-content: space-between; /* Aligns children to the extreme ends */
-max-width: 830px; /* Adjust as needed */
-margin: 0 auto; /* Centers the inner container */
-}
+
+/* Responsive Design */
 @media screen and (max-width: 600px) {
-.header-inner {
-flex-direction: column;
+    .header-inner {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+    .header .title {
+        margin-bottom: 10px;
+    }
 }
-.header .title {
-margin-bottom: 10px;
-}
-}
+
+/* Post Navigation Styles */
 .post-navigation {
-display: flex;
-justify-content: space-between;
-max-width: 800px; /* Match this width to the main content width */
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
 }
+
 .post-navigation a {
-color: #3498db; /* Primary color for links */
-text-decoration: none;
-transition: color 0.3s;
-font-weight: bold; /* Optional: Makes the text stand out */
+    color: #3498db; /* Blue for links */
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s;
+    font-weight: bold;
 }
+
 .post-navigation a:hover {
-color: #2980b9; /* Darker shade on hover for interaction */
+    color: #2980b9; /* Darker blue on hover */
 }
+
 .post-navigation a.disabled {
-color: #bdc3c7; /* Lighter color indicating disabled state */
-cursor: default;
-pointer-events: none;
+    color: #bdc3c7; /* Light grey for disabled links */
+    cursor: default; /* Default cursor for disabled links */
+    pointer-events: none; /* Disable clicking on disabled links */
 }
