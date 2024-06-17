@@ -3,17 +3,10 @@ layout: default
 ---
 {% include pagination.html %}
 
-{% assign current_year = 'now' | date: '%Y' %}
-{% assign post_year = page.date | date: '%Y' %}
-
-{% if post_year != current_year %}
-  {% assign formatted_date = page.date | date: '%b %-d, %Y' %}
-{% else %}
-  {% assign formatted_date = page.date | date: '%b %-d' %}
-{% endif %}
+{% assign formatted_date = page.date | date: '%b %-d, %Y' %}
 
 <h2>{{ page.title }}</h2>
-<p class="post-date">{{ formatted_date }}
+<p class="post-date">Posted at {{ page.date | date: '%b %-d, %Y' }}
 </p>
 <div class="post">
   {{ content }}
