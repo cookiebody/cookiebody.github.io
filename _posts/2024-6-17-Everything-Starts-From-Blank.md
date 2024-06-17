@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Everything Starts from Blank
+title: Everything Starts From Blank
 date: 2024-06-17 15:09:47.000 +0800
 keywords: personal journey, TOEFL preparation, learning Figma, self-improvement, continuous learning
 description: Keep learning diligently and work smart.
