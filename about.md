@@ -3,16 +3,34 @@ layout: default
 title: About
 permalink: /about/
 ---
-## Chris Wang
+## Wang Zilong
 
-Embarking on my journey in the tech industry as a developer, I have played a pivotal role in initiating and delivering a variety of innovative technological projects, including Automated Fare Collection (AFC), Software as a Service (SaaS), Electronic Medical Records (EMR), and Customer Engagement Solutions (CES).
+I started my career as a programmer.
 
-My career trajectory has seen a dynamic evolution, advancing through key positions such as Software Architect, Technical Lead, and Business Manager.
+I worked with various technologies, such as C#, Ruby, Golang, PostgreSQL etc.
 
-This journey has endowed me with a diverse and rich skill set encompassing software development, team leadership, and business operations.
+I am proud that a lot of code I wrote is still running.
 
-As a lifelong learner and proactive leader, I am eager to share my extensive experience in both technology and operations.
+In 2019, I started my adventure in growth operations.
 
-For a detailed overview of my professional experience, please view my [Operational Achievements](/operation) or explore my [Development Portfolio](/development).
+I built a group operating system with CRM for a million-user group.
 
-Additionally, feel free to contact me at chrisloong5@gmail.com, I am prompt in responding to queries that merit my attention.
+Besides that, I have built a standalone e-Commerce business. I operated it from 0 to million GMV.
+
+For now, I find leveraging work is crucial. This is especially true in the AI period.
+
+I always find new tools to use. These tools serve different purposes, such as coding and writing articles.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
