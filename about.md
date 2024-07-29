@@ -21,6 +21,7 @@ For now, I find leveraging work is crucial. This is especially true in the AI pe
 
 I always find new tools to use. These tools serve different purposes, such as coding and writing articles.
 
+The primary purpose of this blog is to practice and improve my English language skills. If you'd like to reach out, please feel free to email me at `chrisloong5@gmail.com`.
 
 
 
