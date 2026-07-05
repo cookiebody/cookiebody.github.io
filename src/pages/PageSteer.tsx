@@ -118,6 +118,134 @@ await agent.execute('Click the login button')`}
       </div>
 
       <h2 className="mb-3 mt-8 text-xl font-semibold" style={{ color: 'var(--text-primary)' }}>
+        Skill System
+      </h2>
+      <p className="mb-4 text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+        Page Steer has a built-in skill learning system that automatically records and replays successful
+        operations. Skills come from three sources:
+      </p>
+      <div className="mb-6 grid gap-3 sm:grid-cols-3">
+        {[
+          { title: '🔧 Built-in', desc: 'Shipped with the extension (e.g. Twitter skill). Code-level, versioned with releases.' },
+          { title: '🧠 Learned', desc: 'AI auto-discovers selectors during operations and saves them as replayable recipes.' },
+          { title: '🌐 Community', desc: 'Downloaded from a shared registry, contributed by other users.' },
+        ].map((item) => (
+          <div
+            key={item.title}
+            className="rounded-lg border p-4"
+            style={{ backgroundColor: 'var(--bg-secondary)' }}
+          >
+            <h3 className="mb-1.5 text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
+              {item.title}
+            </h3>
+            <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+              {item.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+      <p className="mb-3 text-base" style={{ color: 'var(--text-secondary)' }}>
+        <strong style={{ color: 'var(--text-primary)' }}>How skill learning works:</strong>
+      </p>
+      <ul className="mb-4 space-y-1.5 text-sm" style={{ color: 'var(--text-secondary)' }}>
+        <li className="flex items-start gap-2">
+          <span style={{ color: 'var(--accent)' }}>1.</span>
+          <span>When the agent retries a failed action and succeeds, it generates a skill instruction.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span style={{ color: 'var(--accent)' }}>2.</span>
+          <span>Skills are matched by URL pattern and page title keywords on future visits.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span style={{ color: 'var(--accent)' }}>3.</span>
+          <span>Instructions are injected into the LLM prompt, helping it avoid known pitfalls.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span style={{ color: 'var(--accent)' }}>4.</span>
+          <span>Skills auto-prune when failure count exceeds 2× success count.</span>
+        </li>
+      </ul>
+      <p className="mb-4 text-sm" style={{ color: 'var(--text-secondary)' }}>
+        The extension's skill system goes further with <strong style={{ color: 'var(--text-primary)' }}>recorded recipes</strong> —
+        step-by-step DOM operations (click, input, navigate, wait, scroll, extract) with robust
+        multi-level selectors (data-testid → aria-label → id → CSS path) for reliable replay.
+      </p>
+
+      <h2 className="mb-3 mt-8 text-xl font-semibold" style={{ color: 'var(--text-primary)' }}>
+        MCP Server
+      </h2>
+      <p className="mb-4 text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+        The <code className="rounded px-1.5 py-0.5 text-sm" style={{ backgroundColor: 'var(--bg-secondary)', color: 'var(--accent)' }}>@page-steer/mcp</code> package
+        lets AI agent clients (Claude Desktop, Cursor, Copilot) control your browser through the Page Steer extension.
+      </p>
+      <div className="mb-4 overflow-x-auto rounded-lg border p-4" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+        <pre className="text-sm" style={{ color: 'var(--text-primary)' }}>
+{`┌──────────────┐  stdio   ┌──────────────────┐  WebSocket   ┌──────────────┐
+│ Claude /     │◄────────►│ @page-steer/mcp  │◄────────────►│ Hub tab      │
+│ Copilot      │  (MCP)   │ (Node.js)        │  (localhost) │ (extension)  │
+└──────────────┘          └──────────────────┘              └──────┬───────┘
+                                                                   │
+                                                                   │ useAgent
+                                                                   ▼
+                                                            ┌──────────────┐
+                                                            │ MultiPage    │
+                                                            │ Agent        │
+                                                            └──────────────┘`}
+        </pre>
+      </div>
+      <p className="mb-3 text-base" style={{ color: 'var(--text-secondary)' }}>
+        <strong style={{ color: 'var(--text-primary)' }}>Available MCP tools:</strong>
+      </p>
+      <div className="mb-4 overflow-x-auto rounded-lg border" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b">
+              <th className="px-4 py-2 text-left font-medium" style={{ color: 'var(--text-primary)' }}>Tool</th>
+              <th className="px-4 py-2 text-left font-medium" style={{ color: 'var(--text-primary)' }}>Input</th>
+              <th className="px-4 py-2 text-left font-medium" style={{ color: 'var(--text-primary)' }}>Description</th>
+            </tr>
+          </thead>
+          <tbody style={{ color: 'var(--text-secondary)' }}>
+            <tr className="border-b">
+              <td className="px-4 py-2"><code className="text-xs" style={{ color: 'var(--accent)' }}>execute_task</code></td>
+              <td className="px-4 py-2"><code className="text-xs">{'{ task: string }'}</code></td>
+              <td className="px-4 py-2">Execute a browser task in natural language (blocking)</td>
+            </tr>
+            <tr className="border-b">
+              <td className="px-4 py-2"><code className="text-xs" style={{ color: 'var(--accent)' }}>get_status</code></td>
+              <td className="px-4 py-2">—</td>
+              <td className="px-4 py-2">Returns connection and busy state</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-2"><code className="text-xs" style={{ color: 'var(--accent)' }}>stop_task</code></td>
+              <td className="px-4 py-2">—</td>
+              <td className="px-4 py-2">Stop the currently running task</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-3 text-base" style={{ color: 'var(--text-secondary)' }}>
+        <strong style={{ color: 'var(--text-primary)' }}>Configuration for Claude Desktop:</strong>
+      </p>
+      <div className="mb-6 overflow-x-auto rounded-lg border p-4" style={{ backgroundColor: 'var(--bg-secondary)' }}>
+        <pre className="text-sm" style={{ color: 'var(--text-primary)' }}>
+{`{
+  "mcpServers": {
+    "page-steer": {
+      "command": "npx",
+      "args": ["-y", "@page-steer/mcp"],
+      "env": {
+        "LLM_BASE_URL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "LLM_API_KEY": "sk-xxx",
+        "LLM_MODEL_NAME": "qwen3.5-plus"
+      }
+    }
+  }
+}`}
+        </pre>
+      </div>
+
+      <h2 className="mb-3 mt-8 text-xl font-semibold" style={{ color: 'var(--text-primary)' }}>
         Architecture
       </h2>
       <p className="mb-4 text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
