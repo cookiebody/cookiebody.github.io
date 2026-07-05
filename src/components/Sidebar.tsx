@@ -1,11 +1,17 @@
 import { Link, useLocation } from 'wouter'
-import { BookOpen, Zap, Settings } from 'lucide-react'
+import { BookOpen, Zap, Settings, Bot } from 'lucide-react'
 
 const sidebarItems = [
   {
     title: 'Introduction',
     items: [
       { label: 'Getting Started', href: '/docs/getting-started', icon: BookOpen },
+    ],
+  },
+  {
+    title: 'Projects',
+    items: [
+      { label: 'Page Steer', href: '/docs/page-steer', icon: Bot },
     ],
   },
   {

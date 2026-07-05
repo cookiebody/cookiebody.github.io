@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { GettingStarted } from './pages/GettingStarted'
 import { Features } from './pages/Features'
 import { Configuration } from './pages/Configuration'
+import { PageSteer } from './pages/PageSteer'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <Route path="/docs/configuration">
               <Configuration />
+            </Route>
+            <Route path="/docs/page-steer">
+              <PageSteer />
             </Route>
             <Route>
               <GettingStarted />
